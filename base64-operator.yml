@@ -1,0 +1,8 @@
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  base64-operator:
+    lang: python3
+    handler: ./base64-operator
+    image: base64-operator:latest
